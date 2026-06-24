@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Arcturus Counseling & Wellness",
+  "url": "https://arcturuscounseling.com/",
+  "telephone": "+16027272230",
+  "description": "Compassionate care in Litchfield Park, Arizona, offering marriage, relationship, couples counseling, anxiety and depression therapy, infidelity therapy, and anger management throughout the West Valley.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "501 E Plaza Cir",
+    "addressLocality": "Litchfield Park",
+    "addressRegion": "AZ",
+    "postalCode": "85340",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Litchfield Park, AZ",
+    "Glendale, AZ",
+    "Peoria, AZ",
+    "Surprise, AZ",
+    "Avondale, AZ",
+    "Buckeye, AZ",
+    "Goodyear, AZ",
+    "Sun City, AZ",
+    "Sun City West, AZ",
+    "El Mirage, AZ",
+    "Tolleson, AZ",
+    "Youngtown, AZ"
+  ],
+  "medicalSpecialty": [
+    "MentalHealth",
+    "Psychiatric"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Marriage, Relationship, and Couples Counseling"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Anxiety and Depression Therapy"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Anger Management"
+      }
+    }
+  ]
+}
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compassionate care in Litchfield Park, Arizona. Offering marriage, relationship, couples counseling, anxiety, depression, infidelity therapy, and anger management throughout the West Valley." />
+  <title>Counseling & Therapy in Litchfield Park, AZ | Arcturus Counseling & Wellness</title>
+
+  <style>
+    :root {
+      --navy: #0b2340;
+      --deep-navy: #06172c;
+      --soft-blue: #183b63;
+      --muted-pink: #c98fa3; /* 10% more muted rose */
+      --light-rose: #ead6dc;
+      --cream: #f7f1f3;
+      --white: #ffffff;
+      --text-dark: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--cream);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(6, 23, 44, 0.55), rgba(6, 23, 44, 0.75)),
+        url("images/background-image.png");
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+    }
+
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 8% 0 8%;
+    }
+
+    .logo {
+      width: 480px;
+      height: auto;
+      max-width: 70%;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+    }
+
+    .nav-links a:hover {
+      color: var(--muted-pink);
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+    }
+
+    .hero-content {
+      max-width: 520px;
+    }
+
+    .eyebrow {
+      color: var(--muted-pink);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+      margin: 0 0 1rem 0;
+      max-width: none;
+      white-space: nowrap;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      line-height: 1.05;
+      margin: 1rem 0;
+    }
+
+    h1 span {
+      color: var(--muted-pink);
+    }
+
+    .hero p {
+      max-width: 420px;
+      font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.8rem 0.8rem;
+      background-color: var(--muted-pink);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 4px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .button:hover {
+      background-color: black;
+      color: var(--muted-pink);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      align-items: stretch;
+    }
+    .intro-image {
+      height: 100%;
+      overflow: hidden;
+    }
+    /* LEFT COLUMN */
+    .intro-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* vertically centers text */
+      padding: 3rem 8%;
+    }
+    /* RIGHT COLUMN */
+    .brighter-path {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       display: block;
+    }
+
+    .intro {
+      background-color: var(--cream);
+      text-align: center;
+      padding: 0;
+    }
+
+    .intro h2,
+    .services h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .separator {
+      display: block;
+      width: clamp(220px, 65vw, 900px);
+      max-width: 100%;
+      height: auto;
+      margin: 1.5rem auto 2rem;
+    }
+    .intro p {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .value {
+      background-color: var(--light-rose);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 1rem 2%;
+    }
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 2rem 2rem;
+    }
+    .value-card {
+      border: 1px solid rgba(255,255,255,0.2);
+      background-color: rgba(255,255,255,0.04);
+      padding: 2rem;
+    }
+    .value-card h3 {
+      color: var(--soft-blue);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .services {
+      background-color: var(--deep-navy);
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 8%;
+    }
+
+    .services h2 {
+      color: var(--white);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .service-card {
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 2rem;
+      border-radius: 8px;
+      background-color: rgba(255,255,255,0.04);
+    }
+
+    .service-card h3 {
+      color: var(--muted-pink);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--light-rose), var(--cream));
+      text-align: center;
+      padding: 3rem 8%;
+    }
+
+    .cta h2 {
+      font-family: Georgia, serif;
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+    
+    footer {
+      background-color: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem;
+    }
+    .icon {
+      width: 88px;
+      height: 88px;
+      color: var(--muted-pink); /* your pink */
+    }
+    .map-container {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 12px;
+    }
+    @media (max-width: 1068px) {
+      .nav-links {
+         flex-direction: column;
+         align-items: center;
+         gap: 1rem;
+      }
+
+       .nav-links li:last-child {
+          flex-basis: 100%;
+          text-align: center;
+      }
+    }
+    @media (max-width: 900px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      #navbar {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+      }
+
+      .hero {
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+      }
+      .eyebrow {
+        white-space: normal;
+      }
+      .hero p {
+        margin: 0 auto;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+      .value-grid {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  </style>
+</head>
+
+<body>
+  <header id="home">
+    <nav id="navbar">
+      <img class="logo" src="images/arcturus-logo7.png" alt="Arcturus Counseling & Wellness logo" />
+      <ul class="nav-links">
+        <li><a class="homelink" href="#home">Home</a></li>
+        <li><a class="aboutlink" href="#about">About</a></li>
+        <li><a class="serviceslink" href="#services">Services</a></li>
+        <li><a class="contactlink" href="#contact">Contact</a></li>
+        <li><a class="button" href="#contact">Book a Session</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">You don’t have to walk this path alone.</p>
+        <h1>Guidance.<br>Healing.<br><span>Hope.</span></h1>
+        <p>Compassionate guidance to help you find clarity, healing, and a brighter path forward in Litchfield Park and throughout the West Valley.</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="value" class="value">
+      <div class="value-grid">
+        <article class="value-card">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+            <path d="M12 20 C10 18.2 5 14.4 3.4 11.2 C2.1 8.6 3.6 5.5 6.6 5.5 C8.7 5.5 10.4 6.8 12 9 C13.6 6.8 15.3 5.5 17.4 5.5 C20.4 5.5 21.9 8.6 20.6 11.2 C19 14.4 14 18.2 12 20 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+          </svg>
+          <h3>COMPASSIONATE CARE</h3>
+          <p>A safe space where you are seen, heard, and supported.</p>
+        </article>
+        <article class="value-card">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true">
+            <path
+              d="M12 2 L13.5 9 L20 12 L13.5 15 L12 22 L10.5 15 L4 12 L10.5 9 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linejoin="round" />
+          </svg>
+          <h3>CLARITY & INSIGHT</h3>
+          <p>Gain a deeper understanding, break through challenges, and discover new perspectives.</p>
+        </article>
+        <article class="value-card">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true">
+            <!-- Sun -->
+            <path
+              d="M20 36a12 12 0 0 1 24 0"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="4"
+              stroke-linecap="round" />
+            <!-- Rays: all start the same distance from the sun center -->
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-width="4"
+              stroke-linecap="round"
+              transform="translate(32 36)">
+            <line x1="0" y1="-20" x2="0" y2="-28" />
+            <line x1="0" y1="-20" x2="0" y2="-28" transform="rotate(-45)" />
+            <line x1="0" y1="-20" x2="0" y2="-28" transform="rotate(45)" />
+            <line x1="0" y1="-20" x2="0" y2="-28" transform="rotate(-90)" />
+            <line x1="0" y1="-20" x2="0" y2="-28" transform="rotate(90)" />
+            </g>
+            <!-- Bottom curves -->
+            <path
+              d="M14 44c8-5 18-5 28-1"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="4"
+              stroke-linecap="round" />
+            <path
+              d="M24 49c8-5 18-5 28-1"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="4"
+              stroke-linecap="round" />
+          </svg>
+          <h3>HEALING AND GROWTH</h3>
+          <p>Evidence-based therapy to support emotional healing and personal growth.</p>
+        </article>
+        <article class="value-card">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true">
+            <path
+              d="M6 12 C6 8, 10 8, 12 12 C14 16, 18 16, 18 12 C18 8, 14 8, 12 12 C10 16, 6 16, 6 12"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <h3>HOPE FOR TOMORROW</h3>
+          <p>Move forward with renewed purpose and the tools to create a meaningful life.</p>
+        </article>
+      </div>
+    </section>
+    <section id="about" class="intro">
+      <div class="intro-grid">
+        <div class="intro-text">
+           <p class="eyebrow">Welcome to Arcturus</p>
+          <h2>A Brighter Path Forward</h2>
+          <img class="separator" src="images/arcturus-logo7-seperator.png" alt="" />
+          <p>
+            At Arcturus Counseling & Wellness, we provide a safe, compassionate space for individuals, couples, and families seeking healing, growth, and renewed hope. Located in Litchfield Park, Arizona, we proudly serve clients throughout the West Valley. Our mission is to guide you on your journey toward emotional well-being and a more fulfilling life.
+            <br>
+            <br>
+            We also support clients navigating trauma recovery, grief and loss, Christian counseling, life transitions, personal development, OCD, anxiety disorders, bipolar disorder, postpartum depression, and other mental health challenges using evidence-based approaches such as Cognitive Behavioral Therapy (CBT) and Internal Family Systems (IFS) therapy.
+          </p>
+          <p class="supervision-note">
+            <br>
+            Services are provided by Regina McManigell, LAC, under clinical supervision of David Phelan, LPC-2307.
+          </p>
+        </div>
+        <img class="brighter-path" src="images/About Portrait 3.png" alt="Portrait of Regina McManigell" />
+        </div>
+    </section>
+    <section id="services" class="services">
+      <p class="eyebrow">How We Can Help</p>
+      <h2>Therapy for Life’s Journey</h2>
+      <img class="separator" src="images/arcturus-logo7-seperator.png" alt="" />
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Marriage, Relationship, & Couples Counseling</h3>
+          <p>Whether you're facing communication challenges, relationship conflict, infidelity, or feeling disconnected from your partner, counseling can help you rebuild trust, strengthen your connection, and move forward together with greater understanding and confidence.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Anxiety & Depression Therapy</h3>
+          <p>Find relief from anxiety, depression, panic, excessive worry, and overwhelming stress. Using evidence-based approaches such as CBT and other proven therapeutic techniques, we'll work together to build healthier coping skills and greater emotional resilience.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Anger Management</h3>
+          <p>Uncontrolled anger can impact your relationships, work, and overall quality of life. Anger management can help you process past difficulties, identify triggers, improve emotional regulation, and develop healthier ways to respond to stress and conflict.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <h2>Ready to take the next step?</h2>
+      <img class="separator" src="images/arcturus-logo7-seperator.png" alt="" />
+      <p>Reach out today for a complimentary consultation.</p>
+      <p>Office Hours: Monday - Friday, 10 AM - 8 PM</p>
+      <p>(602)-727-2230 | 501 E Plaza Cir, Litchfield Park, AZ 85340</p>
+      <p>-OR-</p>
+      <a class="button" href="mailto:regina@arcturuscounseling.com">Email Us</a>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.3536807995297!2d-112.34584722460288!3d33.492174147096335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b474f044ac393%3A0xb4812d5d152d481a!2s501%20E%20Plaza%20Cir%20Ste%20B%2C%20Litchfield%20Park%2C%20AZ%2085340!5e0!3m2!1sen!2sus!4v1781891529826!5m2!1sen!2sus" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img class="logo" src="images/arcturus-logo7.png" alt="Arcturus Counseling & Wellness logo" />
+    <p>&copy; 2026 Arcturus Counseling & Wellness. All rights reserved.</p>
+    <p> Services are provided by Regina McManigell, LAC, under clinical supervision of David Phelan, LPC-2307. </p>
+    <p>Located in Litchfield Park, Arizona, and serving clients throughout the West Valley, including Glendale, El Mirage, Peoria, Surprise, Avondale, Tolleson, Youngtown, Buckeye, Goodyear, Sun City, and Sun City West.</p>
+  </footer>
+</body>
+</html>
