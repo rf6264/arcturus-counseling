@@ -356,6 +356,60 @@
       border: 0;
       border-radius: 12px;
     }
+
+    /* Rates and insurance */
+    .rates {
+      background-color: var(--cream);
+      padding: 3.5rem 8%;
+      text-align: center;
+    }
+    .rates h2 {
+      font-family: Georgia, serif;
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 0 0 1rem;
+    }
+    .rates-intro { max-width: 680px; margin: 0 auto 2rem; }
+    .rates-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+      max-width: 850px;
+      margin: 0 auto 2rem;
+    }
+    .rate-card {
+      background: var(--white);
+      border: 1px solid var(--light-rose);
+      border-radius: 8px;
+      padding: 2rem 1.25rem;
+    }
+    .rate-card h3 { color: var(--soft-blue); margin: 0 0 .5rem; }
+    .rate-amount {
+      font-family: Georgia, serif;
+      color: var(--navy);
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: bold;
+      line-height: 1.2;
+      margin: .5rem 0;
+    }
+    .rate-card p:last-child { margin-bottom: 0; }
+
+    .intake-note {
+      max-width: 760px;
+      margin: 1.25rem auto 2rem;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .rates-details { max-width: 800px; margin: 0 auto; }
+    .rates-details h3 { color: var(--soft-blue); margin-bottom: .4rem; }
+    .rates-details p { margin-top: .4rem; }
+    .rates .button { margin-top: 1rem; }
+    @media (max-width: 600px) {
+      .rates-grid { grid-template-columns: 1fr; }
+      .rates { padding: 3rem 6%; }
+    }
+
     @media (max-width: 1068px) {
       .nav-links {
          flex-direction: column;
@@ -422,11 +476,11 @@
         <li><a class="homelink" href="#home">Home</a></li>
         <li><a class="aboutlink" href="#about">About</a></li>
         <li><a class="serviceslink" href="#services">Services</a></li>
+        <li><a href="#rates">Rates</a></li>
         <li><a class="contactlink" href="#contact">Contact</a></li>
         <li><a class="button" href="#contact">Book a Session</a></li>
       </ul>
     </nav>
-
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">You don’t have to walk this path alone.</p>
@@ -574,11 +628,37 @@
       </div>
     </section>
 
+    <section id="rates" class="rates" aria-labelledby="rates-heading">
+      <p class="eyebrow">Accessible Care, Clear Options</p>
+      <h2 id="rates-heading">Rates &amp; Insurance</h2>
+      <p class="rates-intro">We believe that understanding your options is an important first step toward getting support. Explore our self-pay rates and insurance options below.</p>
+      <div class="rates-grid">
+        <article class="rate-card">
+          <h3>Individual Counseling</h3>
+          <p class="rate-amount">$120</p>
+          <p>Per ongoing session · Self-pay</p>
+        </article>
+        <article class="rate-card">
+          <h3>Couples Counseling</h3>
+          <p class="rate-amount">$150</p>
+          <p>Per ongoing session · Self-pay</p>
+        </article>
+      </div>
+      <p class="intake-note">Initial intake appointments may have different rates. Please contact us for details about intake fees, insurance coverage, and payment options.</p>
+      <div class="rates-details">
+        <h3>Complimentary 30-Minute Consultation</h3>
+        <p>Let's discuss your needs, answer your questions, and see if we're the right fit. No obligation, just an opportunity to connect.</p>
+        <h3>Insurance &amp; Payment Options</h3>
+        <p>Self-pay options are available. Select insurance plans may be accepted through participating providers. Please contact us to verify coverage and discuss payment options.</p>
+        <a class="button" href="#contact">Contact Us to Get Started</a>
+      </div>
+    </section>
+
     <section id="contact" class="cta">
       <h2>Ready to take the next step?</h2>
       <img class="separator" src="images/arcturus-logo7-seperator.png" alt="" />
       <p>Reach out today for a complimentary consultation.</p>
-      <p>Office Hours: Monday - Saturday, 8 AM - 8 PM</p>
+      <p>Office Hours: Monday - Friday, 8 AM - 8 PM</p>
       <p>(602)-727-2230 | 501 E Plaza Cir, Litchfield Park, AZ 85340</p>
       <p>-OR-</p>
       <p>Regina@arcturuscounseling.com</p>
